@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>PtBr.Text</PackageId>
+    <Description>Brazilian Portuguese text toolkit: CPF, CNPJ (including the 2026 alphanumeric format), CEP with state lookup, phone numbers, number to words in reais, slugs, pluralisation and gender, SEO titles, price history narratives, contact extraction and RAKE keyword extraction. Zero dependencies; works with InvariantGlobalization.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Visible="false" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+name: Wrong result
+description: A plural, gender, number in words, document or phone that came out wrong.
+labels: [language]
+body:
+  - type: input
+    id: input
+    attributes:
+      label: Input
+      placeholder: e.g. Inflector.Pluralize("cidadão")
+    validations:
+      required: true
+  - type: input
+    id: got
+    attributes:
+      label: Result
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Reference (optional)
+      description: A dictionary, grammar or official rule that confirms the expected result.
