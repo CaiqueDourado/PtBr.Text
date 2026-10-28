@@ -5,6 +5,8 @@
 ![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4)
 ![Dependências: 0](https://img.shields.io/badge/depend%C3%AAncias-0-brightgreen)
 
+![PtBr.Text](docs/img/cover.pt-BR.png)
+
 **Kit de texto em português do Brasil para .NET.** Documentos (CPF, CNPJ — inclusive o novo alfanumérico —, CEP, telefone), número por extenso e em reais, slug, plural e gênero, títulos para SEO, narrativa de histórico de preço, extração de contatos e de palavras-chave. Um pacote, zero dependências.
 
 [Read in English](README.md)

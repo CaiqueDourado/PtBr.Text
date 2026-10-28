@@ -5,6 +5,8 @@
 ![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4)
 ![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen)
 
+![PtBr.Text](docs/img/cover.png)
+
 **Brazilian Portuguese text toolkit for .NET.** Documents (CPF, CNPJ — including the new alphanumeric format — CEP, phones), numbers in words and in reais, slugs, plural and gender, SEO titles, price history narratives, contact extraction and keyword extraction. One package, zero dependencies.
 
 [Leia em português](README.pt-BR.md)
