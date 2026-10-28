@@ -116,6 +116,10 @@ RAKE (Rose et al., 2010) implemented from the paper, keeping accented letters in
 - Clause splitting for reviews with a pluggable part-of-speech tagger.
 - More data-to-text narratives (product specs, rankings).
 
+## Related
+
+- [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): its `textos/` module writes vehicle pages from FIPE prices and specifications (about paragraph, equipment, price history, FAQ). Same idea as the narratives here, in Python: every sentence comes from a field, with gender, number and money written right.
+
 ## Contributing
 
 Wrong plural, gender or number in words? Open an issue with the input, the result and the expected value — or add it to the tests. See [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -50,6 +50,10 @@ Exemplos detalhados de cada uma estão no [README em inglês](README.md#what-is-
 - Divisão de orações para reviews, com etiquetador gramatical plugável.
 - Mais narrativas a partir de dados (ficha técnica, rankings).
 
+## Relacionados
+
+- [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): o módulo `textos/` escreve páginas de veículos a partir dos preços FIPE e da ficha técnica (parágrafo "sobre", equipamentos, histórico de preço, FAQ). Mesma ideia das narrativas daqui, em Python: cada frase vem de um campo, com gênero, número e dinheiro escritos certo.
+
 ## Como contribuir
 
 Plural, gênero ou extenso saiu errado? Abra uma issue com a entrada, o resultado e o esperado — ou acrescente nos testes. Veja [CONTRIBUTING.md](CONTRIBUTING.md).
