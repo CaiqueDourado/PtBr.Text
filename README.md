@@ -118,6 +118,7 @@ RAKE (Rose et al., 2010) implemented from the paper, keeping accented letters in
 
 ## Related
 
+- [google-keywords-dataset](https://github.com/CaiqueDourado/google-keywords-dataset): 38 million Google searches with volume and CPC, 4 million of them Brazilian questions; good input for the RAKE extractor and the stopwords here ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/google-keywords-dataset)).
 - [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): its `textos/` module writes vehicle pages from FIPE prices and specifications (about paragraph, equipment, price history, FAQ). Same idea as the narratives here, in Python: every sentence comes from a field, with gender, number and money written right.
 
 ## Contributing

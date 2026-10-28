@@ -52,6 +52,7 @@ Exemplos detalhados de cada uma estão no [README em inglês](README.md#what-is-
 
 ## Relacionados
 
+- [google-keywords-dataset](https://github.com/CaiqueDourado/google-keywords-dataset): 38 milhões de buscas do Google com volume e CPC, 4 milhões delas perguntas de brasileiros; boa entrada para o extrator RAKE e as stopwords daqui ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/google-keywords-dataset)).
 - [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): o módulo `textos/` escreve páginas de veículos a partir dos preços FIPE e da ficha técnica (parágrafo "sobre", equipamentos, histórico de preço, FAQ). Mesma ideia das narrativas daqui, em Python: cada frase vem de um campo, com gênero, número e dinheiro escritos certo.
 
 ## Como contribuir
