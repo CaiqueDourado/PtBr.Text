@@ -52,6 +52,7 @@ Exemplos detalhados de cada uma estão no [README em inglês](README.md#what-is-
 
 ## Relacionados
 
+- Artigo: [Enriquecendo cadastros com APIs abertas](https://github.com/CaiqueDourado/articles/blob/main/open-apis/README.pt-BR.md): CEP, DDD e telefones ao lado das APIs do IBGE.
 - [google-keywords-dataset](https://github.com/CaiqueDourado/google-keywords-dataset): 38 milhões de buscas do Google com volume e CPC, 4 milhões delas perguntas de brasileiros; boa entrada para o extrator RAKE e as stopwords daqui ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/google-keywords-dataset)).
 - [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): o módulo `textos/` escreve páginas de veículos a partir dos preços FIPE e da ficha técnica (parágrafo "sobre", equipamentos, histórico de preço, FAQ). Mesma ideia das narrativas daqui, em Python: cada frase vem de um campo, com gênero, número e dinheiro escritos certo.
 - [dicionario-portugues](https://github.com/CaiqueDourado/dicionario-portugues): 272 mil palavras do português com chaves fonéticas, rimas e textos gerados por IA ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/dicionario-portugues)): singular, plural, feminino e classe gramatical de 188 mil palavras, gerados por IA e sem revisão; um banco de testes para as regras de flexão daqui.
