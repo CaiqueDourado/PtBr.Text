@@ -7,7 +7,7 @@
 
 ![PtBr.Text](docs/img/cover.pt-BR.png)
 
-**Kit de texto em português do Brasil para .NET.** Documentos (CPF, CNPJ — inclusive o novo alfanumérico —, CEP, telefone), número por extenso e em reais, slug, plural e gênero, títulos para SEO, narrativa de histórico de preço, extração de contatos e de palavras-chave. Um pacote, zero dependências.
+**Texto em português do Brasil para .NET.** CPF, CNPJ (inclusive o novo, com letras), CEP e telefone. Número por extenso e em reais. Slug, plural e gênero, título de SEO, histórico de preço em palavras, e tirar contato e palavra-chave de dentro do texto. Um pacote, nenhuma dependência.
 
 [Read in English](README.md)
 
@@ -23,12 +23,15 @@ DurationParser.ToIso8601("uma hora e meia");          // "PT1H30M"
 
 ## Por que mais uma
 
-- **CNPJ alfanumérico.** A partir de julho de 2026 a Receita Federal emite CNPJs com letras (`12.ABC.345/01DE-35`). A maioria dos validadores rejeita.
-- **Funciona com `InvariantGlobalization`.** Muitas bibliotecas tiram acento com `string.Normalize(FormD)`, que não faz nada em containers e apps "trimmed" rodando em modo invariante. Aqui tudo se comporta igual com e sem ICU — o CI testa os dois.
-- **Português de verdade.** Telefone digitado como `0 21 11 3456-7890`, preço em `R$`, "1h30" em receita, nome de produto em CAIXA ALTA, plurais como *papéis*, *níveis*, *pães*, *tênis*.
-- **Geração de texto que respeita a gramática.** Artigo, número e gênero concordam: "Qual **a** melhor geladeira?", "Quais **os** melhores fones de ouvido?".
+- **CNPJ com letra.** A partir de julho de 2026 a Receita Federal emite CNPJ como `12.ABC.345/01DE-35`. A maioria dos validadores recusa.
 
-As regras vêm de anos gerando páginas de produto e categoria para sites de e-commerce brasileiros; o código é uma reescrita limpa e testada.
+- **Funciona com `InvariantGlobalization`.** Muita biblioteca tira acento com `string.Normalize(FormD)`. Em container e app enxuto rodando em modo invariante, isso não faz nada e não avisa. Aqui toda função funciona igual com ou sem ICU, e o CI testa os dois.
+
+- **Português do jeito que as pessoas digitam.** Telefone como `0 21 11 3456-7890`, preço em `R$`, "1h30" em receita, nome de produto TODO EM MAIÚSCULA, plural como *papéis*, *níveis*, *pães*, *tênis*.
+
+- **Texto gerado com a gramática certa.** Artigo, número e gênero concordam: "Qual **a** melhor geladeira?", "Quais **os** melhores fones de ouvido?".
+
+Eu aprendi essas regras em anos gerando páginas de produto e de categoria para sites de e-commerce brasileiros. O código é uma reescrita limpa, com testes.
 
 ## O que tem
 
@@ -52,7 +55,7 @@ Exemplos detalhados de cada uma estão no [README em inglês](README.md#what-is-
 
 ## Relacionados
 
-- Artigo: [Enriquecendo cadastros com APIs abertas](https://github.com/CaiqueDourado/articles/blob/main/open-apis/README.pt-BR.md) ([em inglês no Medium](https://medium.com/@caiquedourado/enriching-sign-up-data-with-open-apis-37388f435398)): CEP, DDD e telefones ao lado das APIs do IBGE.
+- Artigo: [Nome, CEP e telefone já dizem muito sobre o cliente. De graça.](https://github.com/CaiqueDourado/articles/blob/main/open-apis/README.pt-BR.md) ([em inglês no Medium](https://medium.com/@caiquedourado/enriching-sign-up-data-with-open-apis-37388f435398)): CEP, DDD e telefones ao lado das APIs do IBGE.
 - [google-keywords-dataset](https://github.com/CaiqueDourado/google-keywords-dataset): 38 milhões de buscas do Google com volume e CPC, 4 milhões delas perguntas de brasileiros; boa entrada para o extrator RAKE e as stopwords daqui ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/google-keywords-dataset)).
 - [fipe-ficha-tecnica-veiculos](https://github.com/CaiqueDourado/fipe-ficha-tecnica-veiculos): o módulo `textos/` escreve páginas de veículos a partir dos preços FIPE e da ficha técnica (parágrafo "sobre", equipamentos, histórico de preço, FAQ). Mesma ideia das narrativas daqui, em Python: cada frase vem de um campo, com gênero, número e dinheiro escritos certo.
 - [dicionario-portugues](https://github.com/CaiqueDourado/dicionario-portugues): 272 mil palavras do português com chaves fonéticas, rimas e textos gerados por IA ([Kaggle](https://www.kaggle.com/datasets/caiquedourado/dicionario-portugues)): singular, plural, feminino e classe gramatical de 188 mil palavras, gerados por IA e sem revisão; um banco de testes para as regras de flexão daqui.
